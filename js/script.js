@@ -30,6 +30,11 @@ const render = function () {
             item.completed = !item.completed;
             render();
         });
+        li.querySelector('.todo-remove').addEventListener('click', function() {
+            li.remove();
+            toDoData.pop();
+            
+        });
 
     });
 };
