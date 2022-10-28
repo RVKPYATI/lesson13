@@ -38,7 +38,7 @@ const render = function () {
 todoControl.addEventListener('submit', function (event) {
     event.preventDefault();
     if (headerInput.value === '') {
-        alert('Вы не ввели текст')
+        alert('Вы не ввели текст');
     } else {
         const newToDo = {
             text: headerInput.value,
